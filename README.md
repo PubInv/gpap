@@ -42,10 +42,10 @@ with the alarm or the server presenter. The responses begin with the letter "o" 
 that they are initiated by the operator (as opposed to automatically).
 
 In general, an operator may take four actions in response to an alarm:
-. Acknowledge the alarm [a] to mark the fact that they are aware of it.
-. Shelve the alarm [s] (the operator asserts that they do not intend to address it at present.)
-. Dismiss the alarm [d] (the operator asserts that the alarm condition does not accidentally exist and is likely a false alarm.)
-. Complete the alarm [c] (the operator asserts that an action has been taken to complete alarm)
+1. Acknowledge the alarm [a] to mark the fact that they are aware of it.
+2. Shelve the alarm [s] (the operator asserts that they do not intend to address it at present.)
+3. Dismiss the alarm [d] (the operator asserts that the alarm condition does not accidentally exist and is likely a false alarm.)
+4. Complete the alarm [c] (the operator asserts that an action has been taken to complete alarm)
 
 These 4 actions are specified in the next character following th "o". An example is:
 
