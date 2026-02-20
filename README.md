@@ -26,6 +26,8 @@ A message like that looks like:
 
 > "a4{37F4A}My hair is on fire."
 
+( We will eventually use "a4[313]" to mean "annuciate alarm # 313 from the alarm database".)
+
 In additions to this, we define a simple request for status as simply the character "s".
 
 Finally, we definite a "heartbeat" message designed to allow an annunciator to
