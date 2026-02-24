@@ -1,5 +1,7 @@
 # GPAP: General Purpose Alarm Protocol
 
+## TODO: Nagham --- add semantic versioning to this.
+
 Public Invention is attempting to create an open-source alarm system ecosystem that includes the [Krake
 General Purpose Alarm Device](https://github.com/PubInv/krake), an anunciator that lets an operator interact with an alarm,
 and the [ADaM Alarm Dialog Manage system](https://github.com/PubInv/ADaM).
