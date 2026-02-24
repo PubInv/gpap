@@ -18,7 +18,7 @@ The basic alarm message looks like "a4My hair is on fire."
 This means that it is an alarm of severity 4, with a message "My haris is on fire."
 More precisely, this matches a regular expresson like:
 
-^([b|i|u|s|a])([012345]?)(\{(.*)\})?(.{0,80})$
+^([b|i|u|s|a])([012345]?)(\{(.*)\})?(\[(\d{3})\])?(.{0,80})$
 
 The first group defines the "Message Type". Is is either:
 1. "i"nformation
