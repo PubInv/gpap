@@ -82,3 +82,7 @@ These 4 actions are specified in the next character following th "o". An example
 > "od{37F4A}"
 
 ...means the the alarm identified by 37F4A is dismissed.
+
+# TODO
+
+Should control of backlight be added to the protocol?
