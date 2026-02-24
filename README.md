@@ -41,6 +41,8 @@ looks like:
 
 If a message id occurs, it must occur immediately after the severity digit.
 
+The message id is meant to allow acknowledgment of a specific message.
+
 Similarly, a message may contain an **alarm type designator**. Best practice
 is to specify all alarm types in an alarm database (see Hollifield and Habibi).
 The alarm type designator is exactly 3 digits enclosed in square brackets.
