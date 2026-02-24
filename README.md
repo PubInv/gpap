@@ -50,6 +50,9 @@ For example, "a4[313]" to mean "annuciate alarm type # 313 from the alarm databa
 Finally, we definite a "heartbeat" message designed to allow an annunciator to
 observe that the source of alarms is active and sending heartbeats.
 
+Nagham: should we allow heatbeats generally and what should the message form be?
+Should it include a timestamp? a signal strength? A serial number?
+
 
 # The Response Protocol
 
