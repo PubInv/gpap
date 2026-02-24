@@ -18,9 +18,15 @@ The basic alarm message looks like "a4My hair is on fire."
 This means that it is an alarm of severity 4, with a message "My haris is on fire."
 More precisely, this matches a regular expresson like:
 
-^a[0-5](\{[0-9a-fA-F]{1,16}\})?.{0,80}$
+^([i|u|s|a])([012345]?)(\{(.*)\})?(.{0,80})$
 
-The hexadecimal part of that is a hexadecimal code that should be interpreted as a
+The first group defines the "Message Type". Is is either:
+1. "i"nformation
+2. "u"nmute
+3. "s"ilence (mute) yourself
+4. "a"alarm.
+
+In an alarm, the hexadecimal part of that is a hexadecimal code that should be interpreted as a
 "message id", which may be a serial number of a hash code. This is optional.
 A message like that looks like:
 
