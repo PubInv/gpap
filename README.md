@@ -27,9 +27,9 @@ The first group defines the "Message Type". Is is either:
 4. "a"alarm
 5. heat"b"eat
 
-When the message type is an alarm, the message itself then has more parts.
+When the **message type** is an alarm, the message itself then has more parts.
 The **severity** is a single digit (0-5) immediately follows the "a" and 
-is required. All other parts are optional.  
+is required. All other parts are optional. What is not a **message type**, **severity**, **message id** or **alarm type designator** is **content**.
 
 In an alarm, if a curly-braced string occurs, it is taken to be a
 **message id**. It must be a hexadecimal number (in either lower case or upper case.)
