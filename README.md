@@ -18,20 +18,21 @@ The basic alarm message looks like "a4My hair is on fire."
 This means that it is an alarm of severity 4, with a message "My haris is on fire."
 More precisely, this matches a regular expresson like:
 
-^([i|u|s|a])([012345]?)(\{(.*)\})?(.{0,80})$
+^([b|i|u|s|a])([012345]?)(\{(.*)\})?(.{0,80})$
 
 The first group defines the "Message Type". Is is either:
 1. "i"nformation
 2. "u"nmute
 3. "s"ilence (mute) yourself
-4. "a"alarm.
+4. "a"alarm
+5. heat"b"eat
 
 When the message type is an alarm, the message itself then has more parts.
-The *severity* is a single digit (0-5) immediately follows the "a" and 
+The **severity** is a single digit (0-5) immediately follows the "a" and 
 is required. All other parts are optional.  
 
 In an alarm, if a curly-braced string occurs, it is taken to be a
-*message id*. It must be a hexadecimal number (in either lower case or upper case.)
+**message id**. It must be a hexadecimal number (in either lower case or upper case.)
 The message id may be a serial number of a hash code, but signifies the 
 specific instance of this alarm occuring. A message with a message id 
 looks like:
@@ -40,13 +41,11 @@ looks like:
 
 If a message id occurs, it must occur immediately after the severity digit.
 
-Similarly, a message may contain an *alarm type designator*. Best practice
+Similarly, a message may contain an **alarm type designator**. Best practice
 is to specify all alarm types in an alarm database (see Hollifield and Habibi).
 The alarm type designator is exactly 3 digits enclosed in square brackets.
 
-For example, "a4[313]" to mean "annuciate alarm # 313 from the alarm database".)
-
-In additions to this, we define a simple request for status as simply the character "s".
+For example, "a4[313]" to mean "annuciate alarm type # 313 from the alarm database".)
 
 Finally, we definite a "heartbeat" message designed to allow an annunciator to
 observe that the source of alarms is active and sending heartbeats.
