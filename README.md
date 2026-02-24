@@ -26,13 +26,25 @@ The first group defines the "Message Type". Is is either:
 3. "s"ilence (mute) yourself
 4. "a"alarm.
 
-In an alarm, the hexadecimal part of that is a hexadecimal code that should be interpreted as a
-"message id", which may be a serial number of a hash code. This is optional.
-A message like that looks like:
+When the message type is an alarm, the message itself then has more parts.
+The *severity* is a single digit (0-5) immediately follows the "a" and 
+is required. All other parts are optional.  
+
+In an alarm, if a curly-braced string occurs, it is taken to be a
+*message id*. It must be a hexadecimal number (in either lower case or upper case.)
+The message id may be a serial number of a hash code, but signifies the 
+specific instance of this alarm occuring. A message with a message id 
+looks like:
 
 > "a4{37F4A}My hair is on fire."
 
-( We will eventually use "a4[313]" to mean "annuciate alarm # 313 from the alarm database".)
+If a message id occurs, it must occur immediately after the severity digit.
+
+Similarly, a message may contain an *alarm type designator*. Best practice
+is to specify all alarm types in an alarm database (see Hollifield and Habibi).
+The alarm type designator is exactly 3 digits enclosed in square brackets.
+
+For example, "a4[313]" to mean "annuciate alarm # 313 from the alarm database".)
 
 In additions to this, we define a simple request for status as simply the character "s".
 
