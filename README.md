@@ -69,7 +69,7 @@ Severity is a single digit from `0` to `5` immediately after `a`.
 
 ### Message id
 
-If a curly braced string occurs, it is taken to be a message id. It must be a hexadecimal number in lower case or upper case. The message id may be a serial number or a hash code, but it signifies the specific instance of this alarm occurring.
+If a curly braced string occurs, it is taken to be a message id. It must be a hexadecimal number in lower case or upper case. The message id may be a serial number or a hash code, but it signifies the specific instance of this alarm occurring. It is limited to at most 10 digits.
 
 Example:
 
