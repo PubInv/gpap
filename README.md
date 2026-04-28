@@ -189,6 +189,9 @@ An operator may take four actions in response to an alarm:
 
 These four actions are specified by the next character following the `o`.
 
+Each response action may optionally provide an alarm id in curly braces such
+as "{1AF3}" to indicate which alarm is being responded to.
+
 ---
 
 ### Examples
